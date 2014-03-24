@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+version = '1.0'
+sourceCompatibility = 1.5
+
+mainClassName = "io.github.peel.Runner"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:15.0'
+    compile 'com.google.code.guice:guice:1.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.sun.jersey:jersey-core:1.17.1'
+    compile 'com.sun.jersey:jersey-servlet:1.17.1'
+    compile 'com.sun.jersey:jersey-server:1.17.1'
+    compile 'org.eclipse.jetty:jetty-server:8.1.10.v20130312'
+    compile 'org.eclipse.jetty:jetty-servlet:8.1.10.v20130312'
+    testCompile 'junit:junit:4.11'
+}
+
